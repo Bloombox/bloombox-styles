@@ -1,0 +1,37 @@
+{
+  "name": "bloombox-styles",
+  "version": "0.0.1",
+  "description": "Provides styles for Bloombox branding and UI",
+  "private": true,
+  "authors": [
+    "Sam Gammon <sam@momentum.io>"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "bloombox"
+  ],
+  "main": [
+    "bloombox-styles.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bloombox/bloombox-styles.git"
+  },
+  "license": "Private, All Rights Reserved",
+  "homepage": "https://github.com/bloombox/bloombox-styles",
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0",
+    "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
+    "paper-styles": "polymerelements/paper-styles#^1.0.0",
+    "test-fixture": "polymerelements/test-fixture#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
