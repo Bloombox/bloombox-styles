@@ -6,28 +6,79 @@
 <!-- Bloombox Theme -->
 <dom-module id="bloombox-styles">
   <template>
-  <style is="custom-style" include="paper-styles">
-    :root {
-      --primary-color: var(--bloombox-green-primary);
-      --accent-color: var(--bloombox-yellow-accent);
+    <style is="custom-style" include="paper-styles">
+      /** -- Theme Configuration -- **/
+      :root {
+        --primary-color: var(--bloombox-green-primary);
+        --accent-color: var(--bloombox-yellow-accent);
 
-      --primary-background-color: #efefef;
-      --primary-text-color: #212121;
-      --secondary-text-color: #727272;
-      --disabled-text-color: #bdbdbd;
-      --divider-color: #B6B6B6;
+        --primary-background-color: #efefef;
+        --primary-text-color: #212121;
+        --secondary-text-color: #727272;
+        --disabled-text-color: #bdbdbd;
+        --divider-color: #B6B6B6;
 
-      --drawer-menu-color: #333;
-      --drawer-border-color: 1px solid #ccc;
-      --drawer-toolbar-border-color: 1px solid rgba(0, 0, 0, 0.22);
+        --drawer-menu-color: #333;
+        --drawer-border-color: 1px solid #ccc;
+        --drawer-toolbar-border-color: 1px solid rgba(0, 0, 0, 0.22);
 
-      --paper-menu-background-color: #fff;
-      --menu-link-color: #111111;
+        --paper-menu-background-color: #fff;
+        --menu-link-color: #111111;
 
-      --paper-tab-ink: var(--bloombox-green-accent);
+        --paper-tab-ink: var(--bloombox-green-accent);
 
-      --paper-tabs-selection-bar-color: var(--bloombox-green-accent);
-    }
-  </style>
+        --paper-tabs-selection-bar-color: var(--bloombox-green-accent);
+
+        /* Label Colors */
+        --bloombox-label-basic: #9c27b0;
+        --bloombox-label-premium: #8bc34a;
+        --bloombox-label-pricing: #f44336;
+      }
+
+      /** -- Component Styles -- **/
+      paper-button {
+        --paper-button-ink-color: var(--bloombox-green-primary);
+      }
+
+      /** -- Product Card Styles -- **/
+      paper-card.product-card .card-content .row {
+        margin-top: 20px;
+        display: block;
+      }
+
+      paper-card.product-card {
+        background-color: white;
+        min-width: 650px;
+      }
+
+      paper-card.product-card .card-content {
+        background-color: #eee;
+      }
+
+      paper-card.product-card .card-content .zerostate .row {
+        margin-left: 10px;
+      }
+
+      paper-card.product-card .card-content .row.stock-flags {
+        min-height: 60px;
+        line-height: 30px;
+        margin-left: 10px;
+      }
+
+      paper-card.product-card .card-content .row iron-label {
+        padding: 5px;
+        border-radius: 3px;
+        background-color: var(--bloombox-label-basic);
+      }
+
+      paper-card.product-card iron-label.premium-label {
+        background-color: var(--bloombox-label-premium);
+      }
+
+      paper-card.product-card iron-label.sale-label,
+      paper-card.product-card iron-label.bogo-label {
+        background-color: var(--bloombox-label-pricing);
+      }
+    </style>
   </template>
 </dom-module>
