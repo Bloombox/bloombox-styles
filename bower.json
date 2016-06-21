@@ -1,6 +1,6 @@
 {
   "name": "bloombox-styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provides styles for Bloombox branding and UI",
   "private": true,
   "authors": [
