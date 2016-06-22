@@ -79,6 +79,34 @@
       paper-card.product-card iron-label.bogo-label {
         background-color: var(--bloombox-label-pricing);
       }
+
+      paper-card .not-in-stock-overlay {
+        opacity: 0.9;
+        background: #ddd;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        position: absolute;
+        cursor: default;
+      }
+
+      paper-card .not-in-stock-overlay:before {
+        content: '(Not in stock)';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: 180%;
+        font-style: italic;
+        top: 40%;
+      }
+
+      paper-card .data-content bloombox-testing {
+        background: transparent;
+        --no-tests-overlay-background: #eee;
+      }
     </style>
   </template>
 </dom-module>
