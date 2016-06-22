@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bloombox/bloombox-styles.git"
+    "url": "ssh://git@github.com:bloombox/bloombox-styles.git"
   },
   "license": "Private, All Rights Reserved",
   "homepage": "https://github.com/bloombox/bloombox-styles",
