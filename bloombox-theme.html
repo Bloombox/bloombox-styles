@@ -72,16 +72,16 @@
         background-color: var(--bloombox-label-basic);
       }
 
-      paper-card.product-card iron-label.premium-label {
+      paper-card.product-card .card-content iron-label.premium-label {
         background-color: var(--bloombox-label-premium);
       }
 
-      paper-card.product-card iron-label.sale-label,
-      paper-card.product-card iron-label.bogo-label {
+      paper-card.product-card .card-content iron-label.sale-label,
+      paper-card.product-card .card-content iron-label.bogo-label {
         background-color: var(--bloombox-label-pricing);
       }
 
-      paper-card.product-card .product-description {
+      paper-card.product-card .card-content .product-description {
         margin-left: 10px;
       }
 
@@ -119,11 +119,11 @@
         border-bottom: 1px solid black;
       }
 
-      paper-card .zerostate bloombox-testing {
+      paper-card.product-card.zerostate .card-content bloombox-testing {
         margin-left: 10px;
       }
 
-      paper-card .data-content bloombox-testing {
+      paper-card.product-card.data-content .card-content bloombox-testing {
         background: transparent;
         --no-tests-overlay-background: #eee;
       }
