@@ -188,13 +188,26 @@
         margin-right: 5px;
       }
 
+      .stock-flags .base-flags {
+        margin-right: 5px;
+      }
+
+      .stock-flags bloombox-testing {
+        flex: 1 1 20%;
+      }
+
       .product-card .card-content .stock-flags {
         line-height: 30px;
         margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
       }
 
-      .product-card .card-content iron-label {
+      .product-card iron-label {
         padding: 5px;
+        height: 30px;
         border-radius: 3px;
         margin-right: 10px;
         color: white;
@@ -206,12 +219,26 @@
         margin-top: 20px;
       }
 
-      .product-card .card-content iron-label span {
+      #saleValue {
+        margin-top: -11px;
+        width: 160px;
+      }
+
+      .product-card iron-label span {
         cursor: default;
       }
 
-      .product-card .card-content iron-label.premium-label {
+      .product-card iron-label.premium-label {
         background-color: var(--bloombox-label-premium);
+      }
+
+      .sale-toggle-option {
+        display: flex;
+      }
+
+      .sale-percentage-label {
+        position: relative;
+        top: 5px;
       }
 
       .product-card .card-content iron-label.sale-label,
@@ -243,7 +270,7 @@
       }
 
       #maleAncestryField, #femaleAncestryField {
-        max-width: 200px;
+        max-width: 162px;
       }
 
       .not-in-stock-overlay:before {
@@ -269,11 +296,11 @@
         border-bottom: 1px solid black;
       }
 
-      .product-card.zerostate .card-content bloombox-testing {
-        margin-left: 10px;
+      .product-card.zerostate bloombox-testing {
+        margin: 25px 0;
       }
 
-      .product-card.data-content .card-content bloombox-testing {
+      .product-card.data-content bloombox-testing {
         background: transparent;
         --no-tests-overlay-background: #eee;
       }
