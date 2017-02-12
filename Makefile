@@ -7,6 +7,7 @@ BUILDBOT ?= 0
 ENV ?= .env/
 TARGET ?= target/
 CREDENTIALS ?= 1
+VERSION ?= 0.0.4
 
 all: build
 	@echo "bloombox-styles is ready."
@@ -18,7 +19,6 @@ all: build
 
 build: $(TARGET) $(ENV) dependencies
 	@cp -frv ./*.html ./bower.json ./demo ./README.md $(TARGET)/;
-	@tar -czvf release.tar.gz $(TARGET)/
 	@echo "Project build complete."
 
 quickbuild:
@@ -28,7 +28,7 @@ quickbuild:
 release: build
 	@echo "Building release package..."
 	@mkdir -p $(TARGET)/
-	@mv release.tar.gz $(TARGET)/
+	@cd $(TARGET) && tar -czvf ../$(VERSION).tar.gz *
 	@echo "Release ready."
 
 dependencies:
@@ -40,7 +40,7 @@ dependencies:
 clean:
 	@echo "Cleaning project..."
 	@find . -name .DS_Store -delete
-	@rm -frv $(TARGET)
+	@rm -frv $(TARGET) ./*.tar.gz
 
 distclean: clean
 	@echo "Resetting project..."
