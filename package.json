@@ -1,6 +1,6 @@
 {
   "name": "bloombox-styles",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Provides styles for Bloombox branding and UI",
   "main": "index.html",
   "repository": {
