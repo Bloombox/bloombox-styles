@@ -1,6 +1,6 @@
 {
   "name": "bloombox-styles",
-  "version": "0.0.6",
+  "version": "2.0.1",
   "description": "Provides styles for Bloombox branding and UI",
   "private": true,
   "authors": [
@@ -22,8 +22,8 @@
   "homepage": "https://github.com/bloombox/bloombox-styles",
   "ignore": [],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.7.0",
-    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^2.0.0"
   },
   "devDependencies": {
     "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
